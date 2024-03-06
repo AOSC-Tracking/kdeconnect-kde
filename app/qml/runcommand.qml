@@ -46,6 +46,7 @@ Kirigami.ScrollablePage
         }
 
         Kirigami.PlaceholderMessage {
+            // FIXME: not accessible. screen readers won't read this.
             visible: commandsList.count === 0
             text: i18nd("kdeconnect-app", "No commands defined")
             anchors.centerIn: parent
