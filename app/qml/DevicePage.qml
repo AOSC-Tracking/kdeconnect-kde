@@ -20,7 +20,11 @@ Kirigami.ScrollablePage {
     actions: [
         Kirigami.Action {
             icon.name: "network-disconnect"
-            onTriggered: root.currentDevice.unpair()
+            onTriggered: {
+                root.currentDevice.unpair()
+                pageStack.clear()
+                pageStack.push(Qt.resolvedUrl("FindDevicesPage.qml"));
+            }
             text: i18nd("kdeconnect-app", "Unpair")
             visible: root.currentDevice && root.currentDevice.isPaired
         },
