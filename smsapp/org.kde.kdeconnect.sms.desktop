@@ -133,7 +133,7 @@ Exec=kdeconnect-sms
 Icon=kdeconnect
 Type=Application
 Terminal=false
-Categories=Qt;KDE;Network;InstantMessaging
+Categories=Qt;KDE;InstantMessaging;Utility;
 SingleMainWindow=true
 
 X-DBUS-StartupType=Unique

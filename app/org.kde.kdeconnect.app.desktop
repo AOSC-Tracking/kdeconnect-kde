@@ -151,4 +151,4 @@ Exec=kdeconnect-app
 Icon=kdeconnect
 Type=Application
 Terminal=false
-Categories=Qt;KDE;Network
+Categories=Qt;KDE;Utility;
